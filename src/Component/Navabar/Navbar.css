@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.n-name{
+    font-size:2rem;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.n-list{
+    flex: 10;   
+}
+
+.n-list>ul{
+    gap: 2rem; 
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.links{
+ text-decoration: none;
+ position: relative;
+ color: var(--grey);
+}
+.hoverProp{
+    text-decoration: none;
+    color: var(--grey);
+}
+.hoverProp::after{  
+    content: "";
+    height: 1.9px;
+    width: 0px;
+    background: rgb(11, 138, 140);
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    position:absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: 0.5s
+}
+
+.hoverProp:hover::after{
+    cursor: pointer;
+    width: 100%;
+    left: 0% ;  
+    color: #89CFF0;
+}
+
+.hoverProp:hover{
+    color: #89CFF0;
+}
+.n-button{
+    flex: 2;
+}
+
+@media screen and (max-width: 480px){
+    .n-list{
+        display: none;
+    }
+    .n-button{
+        display: none;
+    }
+  }
