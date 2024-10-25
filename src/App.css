@@ -1,36 +1,41 @@
-:root
-{
+:root {
   --yellow: #89CFF0;
-    --orange : #89CFF0;
-    --black : #242D49;
-    --gray : #788097;
-    --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
-    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --orangeCard: #7F00FF
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --orange: #89CFF0;
+  --black: #242D49;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: #7F00FF --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-.App{
-    padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    color: var(--black);    
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
 }
 
 @font-face {
   font-family: Gumela;
   src: url('../src//fonts/Gumela\ Regular.otf');
 }
-*{
-  font-family:Gumela ;
+
+* {
+  font-family: Gumela;
   font-weight: normal;
   font-size: 20px;
-}
-body{
-  margin: 0;
+  box-sizing: border-box
 }
 
-.button{
+body {
+  margin: 0;
+  background-image: url('./img/sidebar.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+}
+
+.button {
   border-radius: 34px;
   border: none;
   color: white;
@@ -38,11 +43,12 @@ body{
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  padding: 11px 26px 11px 26px ;
+  padding: 11px 26px 11px 26px;
   background: #89CFF0;
   box-shadow: 0px 4px 11px 0px #89CFF0;
 }
-.button:hover{
+
+.button:hover {
   cursor: pointer;
   background: white;
   color: var(--orange);
@@ -50,8 +56,8 @@ body{
 
 }
 
-@media screen and (max-width: 480px){
-  .App{
+@media screen and (max-width: 480px) {
+  .App {
     padding: 0.5rem 1rem;
   }
 }

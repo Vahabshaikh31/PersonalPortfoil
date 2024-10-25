@@ -51,14 +51,6 @@ export default function () {
                         txt={" Core Java, Java 8 DSA, C/C++, Python"}
                     />
                 </motion.div>
-                {/* <div
-
-                    style={{ top: '12rem', left: '-4rem' }}>
-                    <Card image={Glasses}
-                        
-                    />
-                </div> */}
-
                 <motion.div
                     initial={{ left: '19rem' }}
                     whileInView={{ left: '12rem' }}
